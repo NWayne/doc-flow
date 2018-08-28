@@ -149,6 +149,31 @@
       <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
     </p>
 </section>
+
+<hr />
+
+<div class="collapsible-content">
+  <button class="action-primary">Primary</button>
+  <button class="action-secondary">Secondary</button>
+  <div class="content-primary">
+    yo
+  </div>
+  <div class="content-secondary">
+    oy
+  </div>
+</div>
+
+<div class="collapsible-content">
+  <button class="action-primary">Primary</button>
+  <button class="action-secondary">Secondary</button>
+  <div class="content-primary">
+    yo
+  </div>
+  <div class="content-secondary">
+    oy
+  </div>
+</div>
+
 <!-- END - NEW CONTENT -->
 
 <script type="text/javascript">
@@ -175,6 +200,34 @@
   } else if (window.attachEvent) {
     window.attachEvent("onload",customScript);
   }
+
+  // Plugin boilerplate
+  $.fn.accordion = function() {
+    var $container = this;
+    var $primaryContent = $container.find('.content-primary');
+    var $secondaryContent = $container.find('.content-secondary');
+    var $primaryButton = $container.find('.action-primary');
+    var $secondaryButton = $container.find('.action-secondary');
+
+    $primaryContent.hide();
+    $secondaryContent.hide();
+
+    $primaryButton.click(function() {
+      $secondaryContent.hide();
+      $primaryContent.show();
+    });
+
+    $secondaryButton.click(function() {
+      $primaryContent.hide();
+      $secondaryContent.show();
+    });
+  };
+
+  // Init accordian plugin for content on page
+  $('.collapsible-content').each(function() {
+    $(this).accordion();
+  });
+
 })()
 </script>
 
