@@ -1,93 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
-
-<p id="question-1">
+<body>
+  <p id="question-1">
     Have you installed your store's theme April 5, 2018?
-</p>
-<button id="before-btn">Before</button>
-<button id="after-btn">After</button>
+  </p>
 
-<!--BEGIN - OLD CONTENT -->
-<section class="hidden" id="old-content">This is OLD content
+  <section class="collapsible-content">
+    <button class="action-primary">Before</button>
+    <button class="action-secondary">After</button>
+ <!--BEGIN - OLD CONTENT -->
+ <section class="content-primary">This is OLD content
     <p>
         Follow the step-by-step instructions below, or watch the video for information on how to install Infinite Options.
-     </p>
-     
-     <hr style="margin-top: 30px;">
-     <p style="margin-top: 15px;">
+      </p>
+      
+      <hr style="margin-top: 30px;">
+      <p style="margin-top: 15px;">
         1. Start by copying the code snippet below.
-     </p>
-     <pre>
-     &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
-     </pre>
-     <p>
+      </p>
+      <pre>
+      &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
+      </pre>
+      <p>
         2. Navigate to your 
         <em>product.liquid</em> file (Instructions on how to locate this file can be found&nbsp;<button id="product-liquid-btn">here</button>).
-     </p>
+      </p>
 
-     <!-- BEGIN - HOW TO LOCATE PRODUCT LIQUID -->
-     <section class="hidden" id="product-liquid-doc">
+      <!-- BEGIN - HOW TO LOCATE PRODUCT LIQUID -->
+      <section id="product-liquid-doc">
         <p>
             1. Starting from your Shopify dashboard, click on 
-           <em>&nbsp;</em><strong>Online Store</strong>, and then click on&nbsp;<strong>Themes</strong>.
-         </p>
-         <p>
+            <em>&nbsp;</em><strong>Online Store</strong>, and then click on&nbsp;<strong>Themes</strong>.
+          </p>
+          <p>
             2. Click the&nbsp; 
-           <strong>Actions</strong>&nbsp;icon, then select&nbsp;<strong>Edit code.</strong>
-         </p>
-         <p>
-           <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/59adf1662c7d3a73488c9592/file-5gzojaD9J5.png">
-         </p>
-         <p>
+            <strong>Actions</strong>&nbsp;icon, then select&nbsp;<strong>Edit code.</strong>
+          </p>
+          <p>
+            <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/59adf1662c7d3a73488c9592/file-5gzojaD9J5.png">
+          </p>
+          <p>
             3. Click on the&nbsp;&nbsp; 
-           <em style="background-color: initial;">product.liquid</em>&nbsp;file&nbsp;located within the&nbsp;<strong style="background-color: initial;">Templates</strong>&nbsp;folder.
-         </p>
-     </section>
-     <!-- END - HOW TO LOCATE PRODUCT LIQUID -->
-     <p>
+            <em style="background-color: initial;">product.liquid</em>&nbsp;file&nbsp;located within the&nbsp;<strong style="background-color: initial;">Templates</strong>&nbsp;folder.
+          </p>
+      </section>
+      <!-- END - HOW TO LOCATE PRODUCT LIQUID -->
+      <p>
         3.&nbsp;Do a search (ctrl&nbsp;F or&nbsp;⌘&nbsp;F) for the word&nbsp; 
-       <span style="background-color: initial;"><strong>&lt;form</strong>.</span>
-       <p class="callout">
+        <span style="background-color: initial;"><strong>&lt;form</strong>.</span>
+        <p class="callout">
           Can't find &lt;form&nbsp;in your 
-         <em>product.liquid </em>file? Follow the instructions in&nbsp;<a href="http://docs.theshoppad.com/article/120-alternative-product-form-locations" target="_blank">this article to locate it</a>.
-       </p>
-     </p>
+          <em>product.liquid </em>file? Follow the instructions in&nbsp;<a href="http://docs.theshoppad.com/article/120-alternative-product-form-locations" target="_blank">this article to locate it</a>.
+        </p>
+      </p>
 </section>
 
 <section class="hidden">
-     <p>
+      <p>
         Once you find that line of code, click on it to highlight the&nbsp;ending&nbsp;<strong>&lt;/form&gt;</strong>&nbsp;tag. This&nbsp;designates the section of code that the copied snippet should be placed within (for example, in the image below, the&nbsp;section is located between lines 74 and 101).
-     </p>
-     <p>
-       <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51d3290336059d4edceb6/file-IYs4cY7ea5.png">
-     </p>
-     <p>
+      </p>
+      <p>
+        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51d3290336059d4edceb6/file-IYs4cY7ea5.png">
+      </p>
+      <p>
         4. &nbsp;Within this section of code, look for the word 
-       <strong>quantity</strong><em>.</em>&nbsp;Paste the install code snippet above that, as seen below.
-     </p>
-     <p>
-       <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e03c697910783242489/file-610E7znFZI.png">
-     </p>
-     <p class="callout">
+        <strong>quantity</strong><em>.</em>&nbsp;Paste the install code snippet above that, as seen below.
+      </p>
+      <p>
+        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e03c697910783242489/file-610E7znFZI.png">
+      </p>
+      <p class="callout">
         Not seeing a 
-       <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>add to cart</strong> text&nbsp;and paste the install code snippet above that section, as seen below.
-     </p>
-     <p>
-       <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e74c69791078324248b/file-eGjzj4WSe2.png">
-     </p>
-     <p>
+        <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>add to cart</strong> text&nbsp;and paste the install code snippet above that section, as seen below.
+      </p>
+      <p>
+        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e74c69791078324248b/file-eGjzj4WSe2.png">
+      </p>
+      <p>
         5. Save your changes.
-     </p>
-     <p>
+      </p>
+      <p>
         6. You can now start creating options for your products. Follow the instructions in&nbsp; 
-       <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
-     </p>
+        <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
+      </p>
 </section>
-<!-- END - OLD CONTENT -->
-
+  <!-- END - OLD CONTENT -->
 <!-- BEGIN - NEW CONTENT -->
-<section class="hidden" id="new-content">This is after April content
+<section class="content-secondary" >This is after April content
     <p style="margin-top: 15px;">
        1. Start by copying the code snippet below.
     </p>
@@ -149,93 +157,20 @@
       <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
     </p>
 </section>
+</section>
+  
 
-<hr />
+</body>
+</html>
 
-<div class="collapsible-content">
-  <button class="action-primary">Primary</button>
-  <button class="action-secondary">Secondary</button>
-  <div class="content-primary">
-    yo
-  </div>
-  <div class="content-secondary">
-    oy
-  </div>
-</div>
 
-<div class="collapsible-content">
-  <button class="action-primary">Primary</button>
-  <button class="action-secondary">Secondary</button>
-  <div class="content-primary">
-    yo
-  </div>
-  <div class="content-secondary">
-    oy
-  </div>
-</div>
+
 
 <!-- END - NEW CONTENT -->
 
-<script type="text/javascript">
-(function() {
-  function customScript() {
-    $('#before-btn').click(function(){
-      $('#new-content').hide();
-      $('#old-content').show();
-    });
-    $('#after-btn').click(function(){
-      $('#old-content').hide();
-      $('#new-content').show();
-    });
-    $('#product-liquid-btn').click(function(){
-      if($('#product-liquid-doc').is(":visible")){
-        $('#product-liquid-doc').hide();
-      } else {
-        $('#product-liquid-doc').show();
-      }
-    });
-  }
-  if (window.addEventListener) {
-    window.addEventListener("load",customScript,false);
-  } else if (window.attachEvent) {
-    window.attachEvent("onload",customScript);
-  }
-
-  // Plugin boilerplate
-  $.fn.accordion = function() {
-    var $container = this;
-    var $primaryContent = $container.find('.content-primary');
-    var $secondaryContent = $container.find('.content-secondary');
-    var $primaryButton = $container.find('.action-primary');
-    var $secondaryButton = $container.find('.action-secondary');
-
-    $primaryContent.hide();
-    $secondaryContent.hide();
-
-    $primaryButton.click(function() {
-      $secondaryContent.hide();
-      $primaryContent.show();
-    });
-
-    $secondaryButton.click(function() {
-      $primaryContent.hide();
-      $secondaryContent.show();
-    });
-  };
-
-  // Init accordian plugin for content on page
-  $('.collapsible-content').each(function() {
-    $(this).accordion();
-  });
-
-})()
-</script>
 
 <style>
-  .hidden {
-    display: none;
-  }
-  #product-liquid-doc {
-    border: 1px solid pink;
-  }
+.hidden {
+  display: none;
+}
 </style>
