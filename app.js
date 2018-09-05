@@ -7,7 +7,6 @@
             var $secondaryContent = $container.children('.content-secondary');
             var $primaryButton = $container.children('.action-primary');
             var $secondaryButton = $container.children('.action-secondary');
-        
             $primaryContent.hide();
             $secondaryContent.hide();
         
