@@ -13,6 +13,8 @@
             $primaryButton.click(function() {
             $secondaryContent.hide();
             $primaryContent.show();
+            console.log(this);
+            // $(this).parents('button').fadeOut();
             });
         
             $secondaryButton.click(function() {
