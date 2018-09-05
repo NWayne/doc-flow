@@ -3,10 +3,10 @@
         // Plugin boilerplate
         $.fn.accordion = function() {
             var $container = this;
-            var $primaryContent = $container.find('.content-primary');
-            var $secondaryContent = $container.find('.content-secondary');
-            var $primaryButton = $container.find('.action-primary');
-            var $secondaryButton = $container.find('.action-secondary');
+            var $primaryContent = $container.children('.content-primary');
+            var $secondaryContent = $container.children('.content-secondary');
+            var $primaryButton = $container.children('.action-primary');
+            var $secondaryButton = $container.children('.action-secondary');
         
             $primaryContent.hide();
             $secondaryContent.hide();

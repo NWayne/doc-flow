@@ -18,3 +18,8 @@ body {
 .action-secondary:focus {
   outline:none;
 }
+
+
+.content-primary, .content-secondary {
+  display: none;
+}

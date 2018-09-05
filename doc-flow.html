@@ -1,176 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
-  <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href ="styles.css" />
 </head>
+
 <body>
-  <p id="question-1">
-    Have you installed your store's theme April 5, 2018?
-  </p>
 
-  <section class="collapsible-content">
-    <button class="action-primary">Before</button>
-    <button class="action-secondary">After</button>
- <!--BEGIN - OLD CONTENT -->
- <section class="content-primary">This is OLD content
-    <p>
-        Follow the step-by-step instructions below, or watch the video for information on how to install Infinite Options.
-      </p>
-      
-      <hr style="margin-top: 30px;">
-      <p style="margin-top: 15px;">
-        1. Start by copying the code snippet below.
-      </p>
-      <pre>
-      &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
-      </pre>
-      <p>
-        2. Navigate to your 
-        <em>product.liquid</em> file (Instructions on how to locate this file can be found&nbsp;<button id="product-liquid-btn">here</button>).
-      </p>
+<h1>
+  Did you install your store's theme after April 5th, 2018?
+</h1>
 
-      <!-- BEGIN - HOW TO LOCATE PRODUCT LIQUID -->
-      <section id="product-liquid-doc">
-        <p>
-            1. Starting from your Shopify dashboard, click on 
-            <em>&nbsp;</em><strong>Online Store</strong>, and then click on&nbsp;<strong>Themes</strong>.
-          </p>
-          <p>
-            2. Click the&nbsp; 
-            <strong>Actions</strong>&nbsp;icon, then select&nbsp;<strong>Edit code.</strong>
-          </p>
-          <p>
-            <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/59adf1662c7d3a73488c9592/file-5gzojaD9J5.png">
-          </p>
-          <p>
-            3. Click on the&nbsp;&nbsp; 
-            <em style="background-color: initial;">product.liquid</em>&nbsp;file&nbsp;located within the&nbsp;<strong style="background-color: initial;">Templates</strong>&nbsp;folder.
-          </p>
-      </section>
-      <!-- END - HOW TO LOCATE PRODUCT LIQUID -->
-      <p>
-        3.&nbsp;Do a search (ctrl&nbsp;F or&nbsp;⌘&nbsp;F) for the word&nbsp; 
-        <span style="background-color: initial;"><strong>&lt;form</strong>.</span>
-        <p class="callout">
-          Can't find &lt;form&nbsp;in your 
-          <em>product.liquid </em>file? Follow the instructions in&nbsp;<a href="http://docs.theshoppad.com/article/120-alternative-product-form-locations" target="_blank">this article to locate it</a>.
-        </p>
-      </p>
-</section>
-
-<section class="hidden">
-      <p>
-        Once you find that line of code, click on it to highlight the&nbsp;ending&nbsp;<strong>&lt;/form&gt;</strong>&nbsp;tag. This&nbsp;designates the section of code that the copied snippet should be placed within (for example, in the image below, the&nbsp;section is located between lines 74 and 101).
-      </p>
-      <p>
-        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51d3290336059d4edceb6/file-IYs4cY7ea5.png">
-      </p>
-      <p>
-        4. &nbsp;Within this section of code, look for the word 
-        <strong>quantity</strong><em>.</em>&nbsp;Paste the install code snippet above that, as seen below.
-      </p>
-      <p>
-        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e03c697910783242489/file-610E7znFZI.png">
-      </p>
-      <p class="callout">
-        Not seeing a 
-        <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>add to cart</strong> text&nbsp;and paste the install code snippet above that section, as seen below.
-      </p>
-      <p>
-        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e74c69791078324248b/file-eGjzj4WSe2.png">
-      </p>
-      <p>
-        5. Save your changes.
-      </p>
-      <p>
-        6. You can now start creating options for your products. Follow the instructions in&nbsp; 
-        <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
-      </p>
-</section>
-  <!-- END - OLD CONTENT -->
-<!-- BEGIN - NEW CONTENT -->
-<section class="content-secondary" >This is after April content
-    <p style="margin-top: 15px;">
-       1. Start by copying the code snippet below.
-    </p>
-    <pre>
-    &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
-    </pre>
-    <p>
-       2. Navigate to your 
-      <em>product.liquid</em> file (Instructions on how to locate this file can be found&nbsp;<button id="product-btn">here</button>).
-      <section class="hidden">
-          <p>
-              1. Starting from your Shopify dashboard, click on 
-             <em>&nbsp;</em><strong>Online Store</strong>, and then click on&nbsp;<strong>Themes</strong>.
-           </p>
-           <p>
-              2. Click the&nbsp; 
-             <strong>Actions</strong>&nbsp;icon, then select&nbsp;<strong>Edit code.</strong>
-           </p>
-           <p>
-             <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/59adf1662c7d3a73488c9592/file-5gzojaD9J5.png">
-           </p>
-           <p>
-              3. Click on the&nbsp;&nbsp; 
-             <em style="background-color: initial;">product.liquid</em>&nbsp;file&nbsp;located within the&nbsp;<strong style="background-color: initial;">Templates</strong>&nbsp;folder.
-           </p>
-      </section>
-    </p>
-    <p>
-       3.&nbsp;Do a search (ctrl&nbsp;F or&nbsp;⌘&nbsp;F) for the word&nbsp;&nbsp; 
-      <strong>{% form 'product'</strong>. Once you find that line of code, please locate the following&nbsp;<strong style="background-color: initial;">{% endform %}</strong>&nbsp;tag a few code blocks below. This&nbsp;designates the section of code that the copied snippet should be placed within (for example, in the image below, the&nbsp;section is located between lines 135 and 183).
-    </p>
-    <p class="callout">
-       Can't find&nbsp; 
-      <strong>{% form 'product'</strong>&nbsp;in your <em>product.liquid </em>file? Follow the instructions in&nbsp;<a href="http://docs.theshoppad.com/article/120-alternative-product-form-locations" target="_blank">this article to locate it</a>.
-    </p>
-    <p>
-      <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac808fc2c7d3a0e93671964/file-8Mh84cTa3P.jpg">
-    </p>
-    <p>
-       4. 
-      <strong>&nbsp;</strong>Within this section of code, look for the word <strong>quantity</strong><em>.</em>&nbsp;Paste the install code snippet above that, as seen below.
-    </p>
-    <p>
-      <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac80b400428630750922e51/file-OUizZDQCcI.jpg">
-    </p>
-    <p class="callout">
-       Not seeing a&nbsp; 
-      <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>a</strong><strong>dd to cart </strong>text&nbsp;and paste the install code snippet above that section, as seen below.
-    </p>
-    <p>
-      <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac80c630428630750922e53/file-PX9GpR0KMF.jpg">
-    </p>
-    <p>
-       5. Save your changes 
-      <strong>.</strong>
-    </p>
-    <p>
-       6. You can now start creating options for your products. Follow the instructions in&nbsp; 
-      <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
-    </p>
-</section>
-</section>
-  
-
-</body>
-</html>
-
-
-
-
-<!-- END - NEW CONTENT -->
-
-
-<style>
-.hidden {
-  display: none;
-}
-</style>
+<div class="collapsible-content">
+  <button class="action-primary">Before</button>
+  <button class="action-secondary">After</button>
+  <div class="content-primary">Navigate to product.liquid. Can you search for &lt;form?
+    <div class="collapsible-content">
+    <button class="action-primary">Yes</button>
+    <button class="action-secondary">No</button>
+      <div class="content-primary">Container Docs</div>
+      <div class="content-secondary">Contact Support</div>
+    </div>
+  </div>
+  <div class="content-secondary">Navigate to product-template.liquid. Can you search for {% form?
+    <div class="collapsible-content">
+      <button class="action-primary">Yes</button>
+      <button class="action-secondary">No</button>
+        <div class="content-primary">New Container Docs</div>
+        <div class="content-secondary"> New Contact Support</div>
+      </div>
+  </div>
+</div>
