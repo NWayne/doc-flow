@@ -12,14 +12,12 @@
         
             $primaryButton.click(function() {
             $secondaryContent.hide();
-            $primaryContent.show();
-            console.log(this);
-            // $(this).parents('button').fadeOut();
+            $primaryContent.fadeIn();
             });
         
             $secondaryButton.click(function() {
             $primaryContent.hide();
-            $secondaryContent.show();
+            $secondaryContent.fadeIn();
             });
         };
         // Init accordian plugin for content on page
