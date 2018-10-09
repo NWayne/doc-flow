@@ -1,261 +1,389 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script type="text/javascript" src="app.js"></script>
-  <link rel="stylesheet" type="text/css" href ="styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
-
-    <h2>
-           Before Infinite Options starts working on your store, you will need to install the app onto your current theme.
-    </h2>  
-    <hr>
     <p>
-         Follow the step-by-step instructions below, or watch the video for information on how to install Infinite Options.
-    </p>
-    <script src="https://fast.wistia.com/embed/medias/dc3r2bubxo.jsonp" async="" type="text/javascript"></script>
-    <script src="https://fast.wistia.com/assets/external/E-v1.js" async="" type="text/javascript"></script>
-    <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-            <div class="wistia_embed wistia_async_dc3r2bubxo videoFoam=true" style="height:100%;width:100%">
-        &nbsp;
-            </div>
-        </div>
-    </div>
-
-    <h2>
+        Before Infinite Options starts working on your store, you will need to install the app onto your current theme.
+   </p>
+   <p>
         Did you install your store's theme before April 5th, 2018?
-    </h2>
-
-<!-- BEGIN CONDITIONAL LOGIC -->
-<div class="collapsible-content">
-        <button class="action-primary">Yes</button>
-        <button class="action-secondary">No</button>
-        <div class="content-primary"> 
+   </p>
+   <!-- BEGIN CONDITIONAL LOGIC -->
+   <div class="collapsible-content">
+       <button class="action-primary">Yes</button>
+       <button class="action-secondary">No</button>
+       <div class="content-primary">
+           <p>
+                Follow the step-by-step instructions below, or watch the video for information on how to install Infinite Options.
+           </p>
+           <!-- BEGIN VIDEO -->
+           <script src="https://fast.wistia.com/embed/medias/dc3r2bubxo.jsonp" async="" type="text/javascript">
+           </script>
+           <script src="https://fast.wistia.com/assets/external/E-v1.js" async="" type="text/javascript">
+           </script>
+           <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                   <div class="wistia_embed wistia_async_dc3r2bubxo videoFoam=true" style="height:100%;width:100%">
+         &nbsp;
+                   </div>
+               </div>
+           </div>
+           <!-- END VIDEO -->
+           <p>
+                Navigate to your 
+               <strong>product.liquid</strong> file.
+           </p>
             <p>
-            Navigate to your <em>product.liquid</em> file (Instructions on how to locate this file can be found&nbsp;<a href="http://docs.theshoppad.com/article/112-find-your-product-liquid-file" target="_blank">here</a>).
+            Follow the instructions below to navigate to a file.
             </p>
             <p>
-            Can you search for &lt;form?
+            1. Starting from your Shopify dashboard, click on&nbsp; 
+            <strong>Online Store</strong>, and then click on&nbsp;<strong>Themes</strong>.
+            </p>
+            <p>
+            2. Click the&nbsp;
+            <strong>Actions</strong>&nbsp;icon, then select&nbsp;<strong>Edit code.&nbsp;</strong>
+            </p>
+            <p>
+            <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/59adf1662c7d3a73488c9592/file-5gzojaD9J5.png">
+            </p>
+            <p>
+            3. Use search bar on top left of the code editor to search for a desired file.
+            </p>
+        <p>
+           <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5bb80be42c7d3a04dd5b5b49/file-5XL2e2lASZ.png">
+       </p>
+           <p>
+                Do a search (ctrl&nbsp;F or&nbsp;⌘&nbsp;F) for the word&nbsp; 
+               <span style="background-color: initial;"><strong>&lt;form</strong>. Were you able to find it? </span>
+           </p>
+           <div class="collapsible-content">
+               <button class="action-primary">Yes</button>
+               <button class="action-secondary">No</button>
+               <div class="content-primary">
+                   <p>
+                        1. Once you find that line of code, click on the 
+                       <strong>&lt;form</strong> to highlight the ending <strong>&lt;/form</strong> tag. This&nbsp;designates the section of install code snippet (available in the next step) should be placed within (for example, in the image below, the&nbsp;section is located between lines 74 and 101).
+                   </p>
+                   <p>
+                       <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51d3290336059d4edceb6/file-IYs4cY7ea5.png">
+                   </p>
+                   <p style="margin-top: 15px;">
+                        2. Copy the Infinite Options install code snippet below.
+                   </p>
+                   <pre>
+                      &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
+                   </pre>
+                   <p>
+                       rd 
+                       <strong>quantity</strong>&lt; &gt;.&nbsp;Paste the install code snippet above that, as seen below.
+                   </p>
+                   <p>
+                       <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e03c697910783242489/file-610E7znFZI.png">
+                   </p>
+                   <p class="callout">
+                        Not seeing a 
+                       <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>add to cart</strong> text&nbsp;and paste the install code snippet above that section, as seen below.
+                   </p>
+                   <p>
+                       <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e74c69791078324248b/file-eGjzj4WSe2.png">
+                   </p>
+                   <p>
+                        5. Save your changes.
+                   </p>
+                   <p>
+                        6. You can now start creating options for your products. Follow the instructions in&nbsp; 
+                       <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
+                   </p>
+               </div>
+               <div class="content-secondary collapsible-content">
+                   <p>
+                        Navigate to 
+                       <strong>product-template.liquid</strong>. Do a search (ctrl&nbsp;F or&nbsp;⌘&nbsp;F) for the word <strong>&lt;form</strong>. Were you able to find it?
+                   </p>
+                    <button class="action-primary">Yes</button>
+                    <button class="action-secondary">No</button>
+                   <div class="content-primary">
+                       <p>
+                            1. Once you find that line of code, click on the 
+                           &lt;form to highlight the ending 
+                           <strong>&lt;/form</strong> tag. This&nbsp;designates the section of install code snippet (available in the next step) should be placed within (for example, in the image below, the&nbsp;section is located between lines 74 and 101). 
+                       </p>
+                       <p>
+                           <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51d3290336059d4edceb6/file-IYs4cY7ea5.png">
+                       </p>
+                       <p style="margin-top: 15px;">
+                            2. Copy the Infinite Options install code snippet below.
+                       </p>
+                       <pre>
+                         &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
+                       </pre>
+                       <p>
+                            3. &nbsp;Within this section of code, look for the word 
+                           <strong>quantity</strong><em>.</em>&nbsp;Paste the install code snippet above that, as seen below.
+                       </p>
+                       <p>
+                           <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e03c697910783242489/file-610E7znFZI.png">
+                       </p>
+                       <p class="callout">
+                            Not seeing a 
+                           <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>add to cart</strong> text&nbsp;and paste the install code snippet above that section, as seen below.
+                       </p>
+                       <p>
+                           <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e74c69791078324248b/file-eGjzj4WSe2.png">
+                       </p>
+                       <p>
+                            4. Save your changes.
+                       </p>
+                       <p>
+                            5. You can now start creating options for your products. Follow the instructions in&nbsp; 
+                           <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
+                       </p>
+                   </div>
+                   <!-- END INSERT CONTAINER DOC -->
+                   <div class="content-secondary collapsible-content">
+                       <p>
+                            Navigate to 
+                            <strong>product-form.liquid</strong>.Do a search for the word <strong>&lt;form</strong>. Were you able to find it?
+                       </p>
+                       <button class="action-primary">Yes</button>
+                       <button class="action-secondary">No</button>
+                       <!-- BEGIN INSERT CONTAINER DOC -->
+                       <div class="content-primary">
+                           <p style="margin-top: 30px;">
+                                1. Once you find that line of code, click on the 
+                               <strong>&lt;form</strong> to highlight the ending <strong>&lt;/form</strong> tag. This&nbsp;designates the section of install code snippet (available in the next step) should be placed within (for example, in the image below, the&nbsp;section is located between lines 74 and 101).
+                           </p>
+                           <p>
+                               <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51d3290336059d4edceb6/file-IYs4cY7ea5.png">
+                           </p>
+                           <p style="margin-top: 15px;">
+                                2. Copy the Infinite Options install code snippet below.
+                           </p>
+                           <pre>
+                             &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
+                           </pre>
+                           <p>
+                                3. &nbsp;Within this section of code, look for the word 
+                               <strong>quantity</strong><em>.</em>&nbsp;Paste the install code snippet above that, as seen below.
+                           </p>
+                           <p>
+                               <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e03c697910783242489/file-610E7znFZI.png">
+                           </p>
+                           <p class="callout">
+                                Not seeing a 
+                               <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>add to cart</strong> text&nbsp;and paste the install code snippet above that section, as seen below.
+                           </p>
+                           <p>
+                               <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e74c69791078324248b/file-eGjzj4WSe2.png">
+                           </p>
+                           <p>
+                                4. Save your changes.
+                           </p>
+                           <p>
+                                5. You can now start creating options for your products. Follow the instructions in&nbsp; 
+                               <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
+                           </p>
+                       </div>
+                       <!-- END INSERT CONTAINER DOC -->
+                       <div class="content-secondary">
+                            <p class="callout">
+                                    Need assistance? Our support team is here to help. <a id="sbContact" href="#contactModal" data-toggle="modal" class="contactUs">Contact Us</a>
+                            </p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="content-secondary">
+      Follow the step-by-step instructions below, or watch the video for information on how to install Infinite Options.
+           <script src="https://fast.wistia.com/embed/medias/kmggl9q9ss.jsonp" async="" type="text/javascript">
+           </script>
+           <script src="https://fast.wistia.com/assets/external/E-v1.js" async="" type="text/javascript">
+           </script>
+           <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                   <div class="wistia_embed wistia_async_kmggl9q9ss videoFoam=true" style="height:100%;position:relative;width:100%">
+                       <div class="wistia_swatch" style="height: 100%; left: 0px; opacity: 1; overflow: hidden; position: absolute; top: 0px; transition: opacity 200ms; width: 100%;">
+                           <img src="https://fast.wistia.com/embed/medias/kmggl9q9ss/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;">
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <p>
+                Navigate to 
+               <strong>product-template.liquid</strong>. 
+
+            </p>
+                <p>
+                Follow the instructions below to navigate to a file.
+                </p>
+                <p>
+                1. Starting from your Shopify dashboard, click on&nbsp; 
+                <strong>Online Store</strong>, and then click on&nbsp;<strong>Themes</strong>.
+                </p>
+                <p>
+                2. Click the&nbsp;
+                <strong>Actions</strong>&nbsp;icon, then select&nbsp;<strong>Edit code.&nbsp;</strong>
+                </p>
+                <p>
+                <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/59adf1662c7d3a73488c9592/file-5gzojaD9J5.png">
+                </p>
+                <p>
+                3. Use search bar on top left of the code editor to search for a desired file.
+                </p>
+                <p>
+                    <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5bb80be42c7d3a04dd5b5b49/file-5XL2e2lASZ.png">
+                </p>
+            <p>
+                Do a search (ctrl&nbsp;F or&nbsp;⌘&nbsp;F) for the word&nbsp;&nbsp; <strong>{% form 'product'</strong>. Were you able to find it?
             </p> 
-          <div class="collapsible-content">
-          <button class="action-primary">Yes</button>
-          <button class="action-secondary">No</button>
-            <div class="content-primary">Container Docs</div>
-            <div class="content-secondary collapsible-content"> Navigate to product-template.liquid. Can you search for &lt;form?
-              <button class="action-primary">Yes</button>
-              <button class="action-secondary">No</button>
-                <div class="content-primary">Container Docs</div>
-                <div class="content-secondary collapsible-content"> Navigate to product-form.liquid. Can you search for &lt;form?
-                  <button class="action-primary">Yes</button>
-                  <button class="action-secondary">No</button>
-                    <div class="content-primary">Container Docs</div>
-                    <div class="content-secondary">Contact Support</div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="content-secondary">Navigate to product-template.liquid. Can you search for {% form?
-          <div class="collapsible-content">
-            <button class="action-primary">Yes</button>
-            <button class="action-secondary">No</button>
-              <div class="content-primary">New Container Docs</div>
-              <div class="content-secondary collapsible-content"> Navigate to product-form.liquid. Can you search for {% form?
-                <button class="action-primary">Yes</button>
-                <button class="action-secondary">No</button>
-                  <div class="content-primary"> New Container Docs</div>
-                  <div class="content-secondary">Contact Support</div>
-              </div>
-            </div>
-        </div>
-      </div>
-<!-- END CONDITIONAL LOGIC -->
-    <hr style="margin-top: 30px;">
-    <p style="margin-top: 15px;">
-         1. Start by copying the code snippet below.
-    </p>
-    <pre>
-    &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
-    </pre>
-    <p>
-         2. Navigate to your 
-        <em>product.liquid</em> file (Instructions on how to locate this file can be found&nbsp;<a href="http://docs.theshoppad.com/article/112-find-your-product-liquid-file" target="_blank">here</a>).
-    </p>
-    <p>
-         3.&nbsp;Do a search (ctrl&nbsp;F or&nbsp;⌘&nbsp;F) for the word&nbsp; 
-        <span style="background-color: initial;"><strong>&lt;form</strong>. Once you find that line of code, click on it to highlight the&nbsp;ending&nbsp;<strong>&lt;/form&gt;</strong>&nbsp;tag. This&nbsp;designates the section of code that the copied snippet should be placed within (for example, in the image below, the&nbsp;section is located between lines 74 and 101).</span>
-    </p>
-    <p class="callout">
-         Can't find &lt;form&nbsp;in your 
-        <em>product.liquid </em>file? Follow the instructions in&nbsp;<a href="http://docs.theshoppad.com/article/120-alternative-product-form-locations" target="_blank">this article to locate it</a>.
-    </p>
-    <p>
-        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51d3290336059d4edceb6/file-IYs4cY7ea5.png">
-    </p>
-    <p>
-         4. &nbsp;Within this section of code, look for the word 
-        <strong>quantity</strong><em>.</em>&nbsp;Paste the install code snippet above that, as seen below.
-    </p>
-    <p>
-        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e03c697910783242489/file-610E7znFZI.png">
-    </p>
-    <p class="callout">
-         Not seeing a 
-        <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>add to cart</strong> text&nbsp;and paste the install code snippet above that section, as seen below.
-    </p>
-    <p>
-        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/57a51e74c69791078324248b/file-eGjzj4WSe2.png">
-    </p>
-    <p>
-         5. Save your changes.
-    </p>
-    <p>
-         6. You can now start creating options for your products. Follow the instructions in&nbsp; 
-        <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
-    </p>
-    <hr style="margin-top: 30px;" id="horizontalrule">
-    <h2 id="infiniteoptions-update">Updated Instructions (After April 5, 2018)</h2>
-    <script src="https://fast.wistia.com/embed/medias/kmggl9q9ss.jsonp" async="" type="text/javascript"></script>
-    <script src="https://fast.wistia.com/assets/external/E-v1.js" async="" type="text/javascript"></script>
-    <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-            <div class="wistia_embed wistia_async_kmggl9q9ss videoFoam=true" style="height:100%;position:relative;width:100%">
-                <div class="wistia_swatch" style="height: 100%; left: 0px; opacity: 1; overflow: hidden; position: absolute; top: 0px; transition: opacity 200ms; width: 100%;">
-                    <img src="https://fast.wistia.com/embed/medias/kmggl9q9ss/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;">
-                </div>
-            </div>
-        </div>
-    </div>
-    <p style="margin-top: 15px;">
-         1. Start by copying the code snippet below.
-    </p>
-    <pre>
-    &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
-    </pre>
-    <p>
-         2. Navigate to your 
-        <em>product.liquid</em> file (Instructions on how to locate this file can be found&nbsp;<a href="http://docs.theshoppad.com/article/112-find-your-product-liquid-file" target="_blank">here</a>).
-    </p>
-    <p>
-         3.&nbsp;Do a search (ctrl&nbsp;F or&nbsp;⌘&nbsp;F) for the word&nbsp;&nbsp; 
-        <strong>{% form 'product'</strong>. Once you find that line of code, please locate the following&nbsp;<strong style="background-color: initial;">{% endform %}</strong>&nbsp;tag a few code blocks below. This&nbsp;designates the section of code that the copied snippet should be placed within (for example, in the image below, the&nbsp;section is located between lines 135 and 183).
-    </p>
-    <p class="callout">
-         Can't find&nbsp; 
-        <strong>{% form 'product'</strong>&nbsp;in your <em>product.liquid </em>file? Follow the instructions in&nbsp;<a href="http://docs.theshoppad.com/article/120-alternative-product-form-locations" target="_blank">this article to locate it</a>.
-    </p>
-    <p>
-        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac808fc2c7d3a0e93671964/file-8Mh84cTa3P.jpg">
-    </p>
-    <p>
-         4. 
-        <strong>&nbsp;</strong>Within this section of code, look for the word <strong>quantity</strong><em>.</em>&nbsp;Paste the install code snippet above that, as seen below.
-    </p>
-    <p>
-        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac80b400428630750922e51/file-OUizZDQCcI.jpg">
-    </p>
-    <p class="callout">
-         Not seeing a&nbsp; 
-        <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>a</strong><strong>dd to cart </strong>text&nbsp;and paste the install code snippet above that section, as seen below.
-    </p>
-    <p>
-        <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac80c630428630750922e53/file-PX9GpR0KMF.jpg">
-    </p>
-    <p>
-         5. Save your changes 
-        <strong>.</strong>
-    </p>
-    <p>
-         6. You can now start creating options for your products. Follow the instructions in&nbsp; 
-        <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
-    </p>
+           
+           <div class="collapsible-content">
+               <button class="action-primary">Yes</button>
+               <button class="action-secondary">No</button>
+               <div class="content-primary">
+        New Container Docs
+                   <hr style="margin-top: 30px;" id="horizontalrule">
+                   <p style="margin-top: 15px;">
+                        1.&nbsp;. Once you find that line of code, please locate the following&nbsp; 
+                       <strong style="background-color: initial;">{% endform %}</strong>&nbsp;tag a few code blocks below. This&nbsp;designates the section of install code snippet (available in the next step) should be placed within (for example, in the image below, the&nbsp;section is located between lines 135 and 183).
+                   </p>
+                   <p>
+                       <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac808fc2c7d3a0e93671964/file-8Mh84cTa3P.jpg">
+                   </p>
+                   <p>
+                        2. Copy the Infinite Options install code snippet below.
+                   </p>
+                   <pre>
+                      &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
+                   </pre>
+                   <p>
+                        3. Within this section of code, look for the word 
+                       <strong>quantity</strong><em>.</em>&nbsp;Paste the install code snippet above that, as seen below.
+                   </p>
+                   <p>
+                       <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac80b400428630750922e51/file-OUizZDQCcI.jpg">
+                   </p>
+                   <p class="callout">
+                        Not seeing a&nbsp; 
+                       <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>a</strong><strong>dd to cart </strong>text&nbsp;and paste the install code snippet above that section, as seen below.
+                   </p>
+                   <p>
+                       <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac80c630428630750922e53/file-PX9GpR0KMF.jpg">
+                   </p>
+                   <p>
+                        4. Save your changes 
+                       <strong>.</strong>
+                   </p>
+                   <p>
+                        5. You can now start creating options for your products. Follow the instructions in&nbsp; 
+                       <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
+                   </p>
+               </div>
+               <div class="content-secondary collapsible-content">
+                <p>
+                    Navigate to 
+                    <strong>product-form.liquid</strong>. Do a search for <strong>{% form 'product'</strong>. Were you able to find it?
+                </p>
+                   <button class="action-primary">Yes</button>
+                   <button class="action-secondary">No</button>
+                   <div class="content-primary">
+                       <p style="margin-top: 15px;">
+                            1.&nbsp;. Once you find that line of code, please locate the following&nbsp; 
+                           <strong style="background-color: initial;">{% endform %}</strong>&nbsp;tag a few code blocks below. This&nbsp;designates the section of install code snippet (available in the next step) should be placed within (for example, in the image below, the&nbsp;section is located between lines 135 and 183).
+                       </p>
+                       <p>
+                           <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac808fc2c7d3a0e93671964/file-8Mh84cTa3P.jpg">
+                       </p>
+                       <p>
+                            2. Start by copying the code snippet below.
+                       </p>
+                       <pre>
+                         &lt;div id="infiniteoptions-container"&gt;&lt;/div&gt;
+                       </pre>
+                       <p>
+                            3. Within this section of code, look for the word 
+                           <strong>quantity</strong><em>.</em>&nbsp;Paste the install code snippet above that, as seen below.
+                       </p>
+                       <p>
+                           <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac80b400428630750922e51/file-OUizZDQCcI.jpg">
+                       </p>
+                       <p class="callout">
+                            Not seeing a&nbsp; 
+                           <strong>quantity</strong>&nbsp;section? Look for&nbsp;<strong>a</strong><strong>dd to cart </strong>text&nbsp;and paste the install code snippet above that section, as seen below.
+                       </p>
+                       <p>
+                           <img src="https://s3.amazonaws.com/helpscout.net/docs/assets/555e25e4e4b027e1978e1c9a/images/5ac80c630428630750922e53/file-PX9GpR0KMF.jpg">
+                       </p>
+                       <p>
+                            5. Save your changes 
+                           <strong>.</strong>
+                       </p>
+                       <p>
+                            6. You can now start creating options for your products. Follow the instructions in&nbsp; 
+                           <a href="http://docs.theshoppad.com/article/127-create-options-for-products" target="_blank">this article</a> to get started.
+                       </p>
+                   </div>
+                   <div class="content-secondary">
+                        <p class="callout">
+                                Need assistance? Our support team is here to help. <a id="sbContact" href="#contactModal" data-toggle="modal" class="contactUs">Contact Us</a>
+                        </p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+
 
 </body>
 
-<script>
-    (function() {
-        function customScript() {
-    // Plugin boilerplate
-         $.fn.accordion = function() {
-            var $container = this;
-            var $primaryContent = $container.children('.content-primary');
-            var $secondaryContent = $container.children('.content-secondary');
-            var $primaryButton = $container.children('.action-primary');
-            var $secondaryButton = $container.children('.action-secondary');
-            $primaryContent.hide();
-            $secondaryContent.hide();
-        
-            $primaryButton.click(function() {
-            $secondaryContent.hide();
-            $primaryContent.fadeIn();
-            });
-        
-            $secondaryButton.click(function() {
-            $primaryContent.hide();
-            $secondaryContent.fadeIn();
-            });
-        };
-    // Init accordian plugin for content on page
-    $('.collapsible-content').each(function() {
-        $(this).accordion();
-        console.log('hey');
-    });
-}
-    if (window.addEventListener) {
-    window.addEventListener("load",customScript,false);
-    } else if (window.attachEvent) {
-    window.attachEvent("onload",customScript);
-    }
-})()
-</script>
 <style>
-    body {
-  background-color: transparent;
-}
-
-.action-primary,.action-secondary{
-  width: 110px;
-  height: 40px;
-  font-size: 16px;
-  margin: 10px 20px;
-  box-shadow: 0 5px 25px 0 rgba(0,0,0,0.25);
-  cursor: pointer;
-}
-.action-primary{
-  background: #887850;
-  color: #fff;
-}
-.action-secondary {
+   .action-primary,.action-secondary{
+  display: inline-block;
+  height: 38px;
+  line-height: 34px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
   background-color: #fff;
-  border: 2px solid #887850;
-  color: #887850;
+  border-radius: 3.0rem;
+  border: 2px solid #877653;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.25s;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
-.action-primary:focus,
-.action-secondary:focus {
-  outline:none;
-}
-.action-primary:hover,
-.action-secondary:hover,
-.action-primary:active,
-.action-secondary:active,
-.action-primary:focus,
-.action-secondary:focus  {
-  background-color: #483d23;
-  border: 2px solid #483d23;
+.action-primary:focus, .action-secondary:focus {
+  outline:none; 
+} 
+.action-primary:hover, .action-secondary:hover, .action-primary:active, .action-secondary:active, .action-primary:focus, .action-secondary:focus {
   color: #fff;
+  border-color: #a09168;
+  background-color: #a09168;
+  outline: 0;
 }
-
-.content-primary, .content-secondary {
-  display: block;
-  width: 100%;
+.content-primary, .content-secondary { 
+  display: block; 
+  width: 100%; 
+  display: none; 
 }
-
 </style>
